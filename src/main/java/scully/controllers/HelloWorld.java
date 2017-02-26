@@ -13,6 +13,7 @@ public class HelloWorld {
 
     @RequestMapping(method = RequestMethod.GET)
     public String getGreeting() {
+        System.out.println("GET Request on: /api/hello");
         return "Hello World, this is a greeting from the developer";
     }
 

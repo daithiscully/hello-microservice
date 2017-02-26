@@ -1,6 +1,11 @@
+Build the latest jar file into target directory:
+mvn clean package
+
+
+
 To build the image from the Dockerfile:
 docker build -t hello-service .
-745296440306.dkr.ecr.eu-west-1.amazonaws.com/hello-service
+docker build -t 745296440306.dkr.ecr.eu-west-1.amazonaws.com/hello-service .
 
 To run the container from the above image:
 docker run -p 8080:8080 -t hello-service
