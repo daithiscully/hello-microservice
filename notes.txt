@@ -1,0 +1,5 @@
+To build the image from the Dockerfile:
+docker build -t hello-service .
+
+To run the container from the above image:
+docker run -p 8080:8080 -t hello-service
